@@ -1,0 +1,20 @@
+.footer {
+    padding: 60px 0 30px 0;
+    background-color: var(--primary-color);
+}
+
+.footer__text {
+    line-height: 30px;
+    color: rgba(255, 255, 255, .7);
+    padding-top: 20px;
+    line-height: 30px;
+}
+
+.footer__categories--title {
+    color: #fff;
+}
+
+.quick__link, .footer__categories ul li {
+    background-color: var(--primary-color) !important;
+    color: #fff;
+}

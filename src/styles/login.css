@@ -1,0 +1,23 @@
+input {
+    border: 1px solid #fff;
+    outline: none;
+    padding: 8px 10px;
+    width: 100%;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.btn__login {
+    background-color: #fff;
+    color: var(--primary-color);
+}
+
+.auth__form {
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    padding: 40px;
+}
+
+.auth__form a {
+    color: #fff;
+}

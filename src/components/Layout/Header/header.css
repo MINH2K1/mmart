@@ -1,0 +1,148 @@
+.header {
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+}
+
+.nav__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+    position: relative;
+}
+
+.logo img {
+    width: 1.5rem;
+    height: 1.5rem
+}
+
+
+
+.logo h1 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 0;
+}
+
+.logo p {
+    font-size: 0.6rem !important;
+    height: 30px;
+    text-align: center;
+    position: absolute;
+    top: 0
+}
+
+
+.menu {
+    display: flex;
+    column-gap: 2.7rem;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.nav__item a {
+    cursor: pointer;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+.nav__icons {
+    display: flex;
+    align-items: center;
+    column-gap: 1.2rem;
+}
+
+.cart__icon, .fav__icon {
+    position: relative;
+}
+
+.badge {
+    position: absolute;
+    top: 15%;
+    content: '';
+    right: -15%;
+    background-color: var(--primary-color);
+    color: #fff;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    z-index: 10;
+}
+
+.nav__icons span i {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.nav__icons span img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.mobile__menu {
+    font-size: 1.7rem;
+    color: var(--primary-color);
+    display: none;
+
+}
+
+.nav__active {
+    font-weight: 700 !important;
+}
+
+.sticky_heard {
+    width: 100%;
+    height: 70px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 3px 3px 8px -3px #ddd;
+}
+
+@media (max-width:768px) {
+    .mobile__menu {
+        display: block;
+        cursor: pointer;
+    }
+
+    .navigation {
+        position: fixed;
+        background-color: rgba(0, 0, 0, 0.5) !important;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        display: none;
+        z-index: 9999;
+    }
+
+    .menu {
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        width: 200px;
+        height: 100%;
+        background-color: #fff !important;
+        z-index: 99999;
+    }
+
+    .active__menu {
+        display: block;
+    }
+}
